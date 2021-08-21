@@ -101,8 +101,13 @@ li {
 
 .logo {
   flex-basis: 20%;
+  display: flex;
+  width: 100%;
 }
 
+.logo ul{
+  display: flex;
+}
 .logo img {
   max-width: 30%; /*30% of its parent logo class*/
   min-width: 5rem;
@@ -130,6 +135,10 @@ li {
 }
 
 .top-nav {
+  display: none;
+}
+
+.all_icons{
   display: none;
 }
 
@@ -178,6 +187,16 @@ li {
     cursor: pointer;
   }
 
+  .all_icons{
+    display: flex;
+  }
+
+  .vector-1, 
+  .vector-2,
+  .vector-3{
+    padding: 2rem;
+  }
+
   .cart-icon {
     display: block;
     font-size: 3rem;
@@ -195,7 +214,7 @@ li {
   .nav-link:visited {
     display: block;
     font-size: 2rem;
-    padding: 4rem 0;
+    padding: 3rem 0;
   }
 
   .nav.fix-nav .nav-link {
